@@ -1,6 +1,7 @@
 FROM fedora
 
 RUN mkdir -p /opt/calibre/
+RUN yum update -y
 RUN yum install -y calibre
 VOLUME  ["/opt/calibre"]
 EXPOSE 8080
